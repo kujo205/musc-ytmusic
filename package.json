@@ -1,5 +1,5 @@
 {
-  "name": "typescript-npm-package-template",
+  "name": "musc-ytmusic",
   "version": "0.0.0-development",
   "description": "Yt Music MUSC API",
   "main": "./lib/index.js",
