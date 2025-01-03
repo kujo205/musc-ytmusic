@@ -79,6 +79,22 @@
               "type": "build",
               "scope": "deps",
               "release": "patch"
+            },
+            {
+              "type": "docs",
+              "release": "patch"
+            },
+            {
+              "type": "chore",
+              "release": "patch"
+            },
+            {
+              "type": "feat",
+              "release": "minor"
+            },
+            {
+              "type": "fix",
+              "release": "patch"
             }
           ]
         }
@@ -91,15 +107,27 @@
             "types": [
               {
                 "type": "feat",
-                "section": "Features"
+                "section": "✨ Features",
+                "hidden": false
               },
               {
                 "type": "fix",
-                "section": "Bug Fixes"
+                "section": "🐛 Bug Fixes",
+                "hidden": false
               },
               {
                 "type": "build",
-                "section": "Dependencies and Other Build Updates",
+                "section": "🔧 Dependencies and Build Updates",
+                "hidden": false
+              },
+              {
+                "type": "docs",
+                "section": "📝 Documentation",
+                "hidden": false
+              },
+              {
+                "type": "chore",
+                "section": "🏗 Maintenance",
                 "hidden": false
               }
             ]
