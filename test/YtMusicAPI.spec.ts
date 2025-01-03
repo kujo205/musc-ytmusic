@@ -1,0 +1,21 @@
+import { ytMusicAPI } from '../src';
+
+// TESTING ACCOUNT COOKIE
+const cookie =
+  'YSC=Ta-bl_d3tD8; VISITOR_INFO1_LIVE=zAhvxX66aRU; VISITOR_PRIVACY_METADATA=CgJVQRIEGgAgUQ%3D%3D; _gcl_au=1.1.518045155.1735919783; __Secure-1PSIDTS=sidts-CjAB7wV3sdaNAwD6n6Pl237tVOvWmKcOn-lidInxltH6MWMDPUPTv0pCPTIHGepA4OIQAA; __Secure-3PSIDTS=sidts-CjAB7wV3sdaNAwD6n6Pl237tVOvWmKcOn-lidInxltH6MWMDPUPTv0pCPTIHGepA4OIQAA; HSID=AC26hnPNv3bDpATm4; SSID=ArVn7W7n46H3TBE_E; APISID=YpjI-nLUxF7B0a80/ARN1OwssdtYJ0khiR; SAPISID=Lv96VPadCEBc52vl/AA4JN1_eehzWDG8OB; __Secure-1PAPISID=Lv96VPadCEBc52vl/AA4JN1_eehzWDG8OB; __Secure-3PAPISID=Lv96VPadCEBc52vl/AA4JN1_eehzWDG8OB; LOGIN_INFO=AFmmF2swRAIgIjPmJjvK0_JfV7Mb4fnJvN3MvsVENkwEgxduNfexU9ACIH53t9mBi_sYX7k8R4djbn9Hmsk--IO8eCo30Oyvk6if:QUQ3MjNmeFFHN3RqZDhvWWN0ZUc0Sm82c3RjcVNwRHJzTG5Yc09ZSzRzNmRWaVduWUhaVkJTOTRCMlFnSS0zekVGOFJ5dmhPV2JLU0t1c3NnOWJUYjBmZ2FaRzhDS1hpUXhfbnNRaVBWUFpZNFZGYnYzdGZkdDlCaXZVMnNPY2pwdTNZc0JsRTJtXzR1UGhNbVd1a0Y1NzBQUEJ2a3YybTNB; __Secure-ROLLOUT_TOKEN=CPGO2MaqrOmohwEQiNTqkfXZigMYiNTqkfXZigM%3D; SID=g.a000sAigRLUnCzsn421WKJuT4qJljdzxLiwsx6wpN0JXYu5HyrUstVnyTwqxDRudVjWiNFnS0QACgYKAa4SARQSFQHGX2MiaDoxe_gqCGmJguujS3xfGRoVAUF8yKoFPfc2sG7-iUVkXzqULMRH0076; __Secure-1PSID=g.a000sAigRLUnCzsn421WKJuT4qJljdzxLiwsx6wpN0JXYu5HyrUsemATR_Zl3oeqJWV7n-kSDQACgYKAfkSARQSFQHGX2Mi4ClYc-xRccmSSVQFMKb2LhoVAUF8yKo476fI4B8dhOP4Q1dPNZEO0076; __Secure-3PSID=g.a000sAigRLUnCzsn421WKJuT4qJljdzxLiwsx6wpN0JXYu5HyrUsH1KVy2lUp_seh0J9DVq6TQACgYKAfQSARQSFQHGX2MiXJLOUgcLIbVCSh5Sb_FTghoVAUF8yKqDnD2RN_yhEKkjbGfwRb460076; CONSISTENCY=AKreu9tFuuWLPpxvk35kLBx7jnlWZ92a2nrVBqX0RC0pgt1PuFotbE34UTpj8y2NyDQZ5Os8MGQvm_gDOMnjENkql4HglGXsykpaeFhHAc-RAWCpx4wz1Q0piCe1C9jLucBcYbkZGsmJnTnwlPRaTBE; SIDCC=AKEyXzUUeJnKSW6tLaV-W2F-nEizktZULgRMoJTkt_fxItbPP3f5Fuy6Z6dAzT41H3wNNp7s; __Secure-1PSIDCC=AKEyXzV3f6bnE7Z1XfugiWkR8uA-JbyNp58ZxA-oaTznoMTsfARdHw5M-R7R4_D_WgOm_ROZdw; __Secure-3PSIDCC=AKEyXzXoK_eZeOeQp7N-6t7vi-wfpoND3DKbbZFVZAjs_OEu-4SrTZL97aVmlCuO9yBePNl5vQ';
+
+describe('index', () => {
+  describe('YtMusicApi', () => {
+    it('Creates a sharabale playlist', async () => {
+      const id = await ytMusicAPI.createSharablePlaylistFromLiked(
+        cookie,
+        'test',
+        'test'
+      );
+
+      console.log(id);
+
+      expect(id).toBeDefined();
+    });
+  });
+});
